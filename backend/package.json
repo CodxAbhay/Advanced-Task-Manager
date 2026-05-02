@@ -1,7 +1,7 @@
 {
-  "name": "advanced-task-manager-backend",
+  "name": "team-task-manager-backend",
   "version": "1.0.0",
-  "description": "Backend API for Advanced Task Manager",
+  "description": "Backend API for Team Task Manager",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

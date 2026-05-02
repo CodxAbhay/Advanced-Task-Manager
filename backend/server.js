@@ -36,7 +36,7 @@ app.use('/api/dashboard', require('./routes/dashboard.routes'));
 app.get('/api/health', (req, res) => {
   res.status(200).json({
     success: true,
-    message: 'Advanced Task Manager API is running',
+    message: 'Team Task Manager API is running',
     timestamp: new Date().toISOString(),
   });
 });

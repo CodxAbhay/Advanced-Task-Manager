@@ -1,4 +1,4 @@
-# 🚀 Advanced Task Manager
+# 🚀 Team Task Manager
 
 A full-stack team task management application with role-based access control, Kanban boards, and real-time project tracking.
 
@@ -85,7 +85,7 @@ A full-stack team task management application with role-based access control, Ka
 1. **Clone the repository**
 ```bash
 git clone <repo-url>
-cd advanced-task-manager
+cd team-task-manager
 ```
 
 2. **Setup environment variables**

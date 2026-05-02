@@ -58,7 +58,7 @@ const Sidebar = ({ isOpen, onToggle }) => {
               </svg>
             </div>
             <div className="logo-text">
-              <span className="logo-name">Advanced</span>
+              <span className="logo-name">Team</span>
               <span className="logo-sub">Task Manager</span>
             </div>
           </div>
