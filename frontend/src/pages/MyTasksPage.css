@@ -1,0 +1,30 @@
+.my-tasks-page { max-width: 1100px; margin: 0 auto; }
+
+.filter-bar { display: flex; gap: 6px; margin-bottom: 20px; flex-wrap: wrap; }
+.filter-btn { display: flex; align-items: center; gap: 6px; padding: 8px 16px; border-radius: var(--radius-full); font-size: 0.82rem; font-weight: 500; color: var(--text-secondary); background: var(--bg-glass); border: 1px solid var(--border-primary); transition: all var(--transition-fast); }
+.filter-btn:hover { border-color: var(--border-accent); color: var(--text-primary); }
+.filter-active { background: var(--accent-primary); color: white; border-color: var(--accent-primary); }
+.filter-count { font-size: 0.7rem; padding: 1px 6px; border-radius: var(--radius-full); background: rgba(255,255,255,0.15); }
+
+/* Tasks Table */
+.tasks-table { background: var(--bg-card); border: 1px solid var(--border-primary); border-radius: var(--radius-lg); overflow: hidden; backdrop-filter: blur(10px); }
+.table-header { display: grid; grid-template-columns: 2fr 1fr 0.7fr 0.8fr 0.8fr; padding: 14px 20px; border-bottom: 1px solid var(--border-primary); font-size: 0.72rem; font-weight: 700; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.08em; }
+.table-row { display: grid; grid-template-columns: 2fr 1fr 0.7fr 0.8fr 0.8fr; padding: 14px 20px; border-bottom: 1px solid var(--border-primary); align-items: center; cursor: pointer; transition: background var(--transition-fast); }
+.table-row:last-child { border-bottom: none; }
+.table-row:hover { background: var(--bg-glass); }
+
+.col-title .task-name { display: block; font-size: 0.88rem; font-weight: 500; color: var(--text-primary); }
+.col-title .task-desc-preview { display: block; font-size: 0.76rem; color: var(--text-tertiary); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 300px; }
+.col-project { display: flex; align-items: center; gap: 6px; font-size: 0.82rem; color: var(--text-secondary); }
+.col-date { font-size: 0.82rem; color: var(--text-secondary); }
+.col-date .overdue { color: #f87171; font-weight: 600; }
+
+.status-select { background: var(--bg-glass); border: 1px solid var(--border-primary); border-radius: var(--radius-sm); padding: 5px 10px; font-size: 0.78rem; font-weight: 600; outline: none; cursor: pointer; transition: all var(--transition-fast); appearance: none; }
+.status-select:focus { border-color: var(--accent-primary); }
+.status-select option { background: var(--bg-secondary); color: var(--text-primary); }
+
+@media (max-width: 768px) {
+  .table-header { display: none; }
+  .table-row { grid-template-columns: 1fr; gap: 8px; padding: 16px; }
+  .col-project, .col-priority, .col-date, .col-status { font-size: 0.78rem; }
+}

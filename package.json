@@ -1,0 +1,17 @@
+{
+  "name": "advanced-task-manager",
+  "version": "1.0.0",
+  "description": "A full-stack team task manager with role-based access control",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js",
+    "install-all": "npm install --prefix backend && npm install --prefix frontend",
+    "build": "npm run install-all && npm run build-client",
+    "build-client": "npm run build --prefix frontend",
+    "dev-frontend": "npm run dev --prefix frontend"
+  },
+  "keywords": ["task-manager", "project-management", "mern"],
+  "author": "Abhay Pratap Verma",
+  "license": "MIT"
+}
